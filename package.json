@@ -9,7 +9,7 @@
     "debug": "DEBUG=Eleventy* eleventy --watch",
     "sass": "gulp sass",
     "sass-watch": "gulp",
-    "post:new": "node ./_scripts/new-post.js "
+    "post:new": "node ./_scripts/new-post.js"
   },
   "keywords": [
     "stevenhicks.me"

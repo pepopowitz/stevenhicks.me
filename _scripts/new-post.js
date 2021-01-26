@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+const fsx = require('fs-extra');
 const { DateTime } = require('luxon');
 
 const name = process.argv.slice(2)[0];
@@ -30,4 +30,4 @@ draft: true
 ---
 `;
 
-fs.outputFile(filepath, contents);
+fsx.outputFile(filepath, contents);
