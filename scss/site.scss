@@ -112,7 +112,7 @@ blockquote {
   @include boxShadowed($brand-light);
   background-color: $brand-white-pure;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1em;
 
   p:first-child {
     margin-top: 0;
