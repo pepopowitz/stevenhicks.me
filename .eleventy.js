@@ -25,6 +25,13 @@ module.exports = function (eleventyConfig) {
       .filter((x) => x.data.draft !== true)
       .reverse();
   });
+  eleventyConfig.addCollection('tweetablePostsReversed', function (collection) {
+    return collection
+      .getFilteredByTags('post')
+      .filter((x) => !!x.data.tweet)
+      .filter((x) => x.data.draft === true) //TODO: change this to !== after proving the concept
+      .reverse();
+  });
   eleventyConfig.addCollection('engagementsReversed', function (collection) {
     return collection.getFilteredByTag('engagements').reverse();
   });
