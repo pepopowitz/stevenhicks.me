@@ -6,8 +6,8 @@ on:
       - edited
       - synchronize
   schedule:
-    # 30 14 * * * - 14:30 UTC every day
-    - cron: 0 * * * *
+    # 15 14 * * * - 14:15 UTC every day
+    - cron: 15 14 * * MON-FRI
 
 jobs:
   merge_schedule:
