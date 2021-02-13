@@ -13,3 +13,7 @@ It's hard to do deep work in an hour or less. If I make full use of the hour, su
 Thankfully, I have a lot of good role models to emulate at [Artsy](https://twitter.com/artsyopensource). Some of my most admirable coworkers accomplish meaningful work in the same size blocks of time that I would have previously dismissed as too small for meaningful work. They might not know it, but I've been watching and taking notes.
 
 Over the next couple weeks, I'll share the rules I've developed for myself to work more effectively with my small blocks of time. I don't always follow them, but the days I do are the days I feel most successful, productive, and effective.
+
+### My Rules For Maximizing Productivity In Small Time Blocks
+
+- **Rule 1:** [Dedicate time. And schedule it.](../dedicate-time-and-schedule-it)
