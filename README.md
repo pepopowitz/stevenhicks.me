@@ -15,11 +15,11 @@ http-server ./_site
 
 ## Generate content
 
-### Note
+### Post
 
 ```
-yarn new:note some-note-name
+yarn post:new some-article-name
 ```
 
-Generates it at notes/YYYY/MM/some-note-name.md
+Generates it at blog/YYYY/MM/some-article-name.md
 
