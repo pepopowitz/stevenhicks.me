@@ -12,9 +12,7 @@ it
 
 should
 
-have a tweet. 
-
-https://stevenhicks.me/blog/2021/02/maximizing-productivity"
+have a tweet."
 
 ---
 

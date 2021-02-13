@@ -5,7 +5,7 @@
   "metadata": {
     "title": "Steven Hicks tweetable posts",
     "subtitle": "Ramblings on development, life, and the development life.",
-    "url": "https://stevenhicks.me/tweet/",
+    "url": "https://stevenhicks.me",
     "feedUrl": "https://stevenhicks.me/tweets.xml",
     "author": {
       "name": "Steven Hicks",
@@ -19,7 +19,7 @@
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.subtitle }}</subtitle>
 	<link href="{{ metadata.feedUrl }}" rel="self"/>
-	<link href="{{ metadata.url }}"/>
+	<link href="{{ metadata.url }}/tweets"/>
 	<updated>{{ collections.tweetablePostsReversed | lastUpdatedDate }}</updated>
 	<id>{{ metadata.feedUrl }}</id>
 	<author>
@@ -33,7 +33,9 @@
 			<link href="{{ absolutePostUrl }}"/>
 			<updated>{{ post.date | rssDate }}</updated>
 			<id>{{ absolutePostUrl }}</id>
-			<content type="text">{{ post.data.tweet }}</content>
+			<content type="text">{{ post.data.tweet }}
+
+				{{ absolutePostUrl }}</content>
 		</entry>
 	{%- endfor %}
 </feed>
