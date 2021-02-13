@@ -2,7 +2,7 @@ name: Merge Schedule
 on:
   schedule:
     # 30 14 * * * - 14:30 UTC every day
-    - cron: 5 * * * *
+    - cron: 30 14 * * *
 
 jobs:
   merge_schedule:
