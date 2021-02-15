@@ -23,4 +23,4 @@ What's the difference between the hour of sharpening I never did and the hour of
 
 With my writing hour, my goal is smaller — work on a blog article. Even if I don't know what the article is about yet, I know where to start...
 
-And I'll tell you all about that in Rule 4. 
+And I'll tell you all about that later, in Rule 4. 
