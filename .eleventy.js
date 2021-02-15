@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
     return collection
       .getFilteredByTags('post')
       .filter((x) => !!x.data.tweet)
-      .filter((x) => x.data.draft === true) //TODO: change this to !== after proving the concept
+      .filter((x) => x.data.draft !== true)
       .reverse();
   });
   eleventyConfig.addCollection('engagementsReversed', function (collection) {
@@ -67,8 +67,13 @@ module.exports = function (eleventyConfig) {
         return m + ' ' + d + ', ' + y;
       },
       lastUpdatedDate: (collection) => {
+        if (collection.length === 0) {
+          return;
+        }
         // Newest date in the collection
-        return dateToISO(collection[collection.length - 1].date);
+        dates = collection.map((x) => x.date);
+        latest = dates.sort((a, b) => b - a)[0];
+        return dateToISO(latest);
       },
       rssDate: (dateObj) => {
         return dateToISO(dateObj);
