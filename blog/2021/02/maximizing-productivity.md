@@ -17,3 +17,4 @@ Over the next couple weeks, I'll share the rules I've developed for myself to wo
 ### My Rules For Maximizing Productivity In Small Time Blocks
 
 - **Rule 1:** [Dedicate time. And schedule it.](../dedicate-time-and-schedule-it)
+- **Rule 2:** [Slice work smaller.](../slice-work-smaller)
