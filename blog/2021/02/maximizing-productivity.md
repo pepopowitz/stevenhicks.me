@@ -1,5 +1,5 @@
 ---
-title: Maximizing Productivity As A Maker With A Manager's Schedule
+title: Maximizing Productivity During Small Blocks Of Time
 date: 2021-02-10T16:14:26.556
 tags: post
 layout: blog
