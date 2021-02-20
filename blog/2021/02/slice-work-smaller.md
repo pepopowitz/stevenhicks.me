@@ -7,7 +7,7 @@ snippet: Rule 2 for taking advantage of small blocks of time — slice your work
 tweet: Rule 2 for taking advantage of small blocks of time — slice your work smaller to shift the meaning of "meaningful progress."
 ---
 
-_This is an article from the series [Maximizing Productivity As A Maker With A Manager's Schedule](../maximizing-productivity)._
+_This is an article from the series [Maximizing Productivity During Small Blocks Of Time](../maximizing-productivity)._
 
 I'm a +7 perfectionist. I don't like to walk away from work until t's are crossed, i's are dotted, tests are written, and the work is _done_-done. 
 

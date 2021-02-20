@@ -7,7 +7,7 @@ snippet: My first rule for maximizing productivity in small blocks of time — d
 tweet: My first rule for maximizing productivity in small blocks of time — dedicate time to a specific goal. And schedule it on my calendar, before that hour gets taken.
 ---
 
-_This is an article from the series [Maximizing Productivity As A Maker With A Manager's Schedule](../maximizing-productivity)._
+_This is an article from the series [Maximizing Productivity During Small Blocks Of Time](../maximizing-productivity)._
 
 My first rule for maximizing productivity in small blocks of time is to dedicate time to a specific goal, and schedule it on my calendar. 
 
