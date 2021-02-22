@@ -42,4 +42,4 @@ I actually left you a good heuristic above for knowing when you need to break yo
 
 Slicing my work smaller helped me answer a very specific question I was trying to answer: "How can I accomplish something meaningful in a shorter amount of time?"
 
-In the next article I'll answer another question: "How can I take advantage of those _very_ short blocks of time?" 
+In the next article I'll answer another question: ["How can I take advantage of those _very_ short blocks of time?"](/blog/2021/02/categorize-by-depth/) 
