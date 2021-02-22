@@ -18,3 +18,4 @@ Over the next couple weeks, I'll share the rules I've developed for myself to wo
 
 - **Rule 1:** [Dedicate time. And schedule it.](../dedicate-time-and-schedule-it)
 - **Rule 2:** [Slice work smaller.](../slice-work-smaller)
+- **Rule 3:** [Categorize tasks by depth, and work them at the right time..](../categorize-by-depth/)
