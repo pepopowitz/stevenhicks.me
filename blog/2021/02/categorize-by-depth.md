@@ -4,7 +4,7 @@ date: 2021-02-22T12:19:45.621
 tags: post
 layout: blog
 snippet: How can you take advantage of *very* small blocks of time? By dedicating them to your shallowest work. 
-twitter: "I published the next article in my series on maximizing those small blocks of time. 
+tweet: "I published the next article in my series on maximizing those small blocks of time. 
 
 How can you take advantage of *very* small blocks of time? By dedicating them to your shallowest work."
 ---
