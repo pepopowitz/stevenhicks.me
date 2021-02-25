@@ -75,4 +75,4 @@ I also don't always _need_ a warm-up. Sometimes my mind is in the right space fr
 
 ---
 
-Warming up for deep work in small blocks of time is pretty new to me but so far it's been really effective. I spend a lot less time getting into the mindset I need to be effective. If you've got suggestions on how to warm up for deep work, I'd love to hear about them! 
+Warming up for deep work in small blocks of time is pretty new to me but so far it's been really effective. I spend a lot less time getting into the mindset I need to be effective. If you've got suggestions on how to warm up for deep work, [I'd love to hear about them](https://twitter.com/pepopowitz/status/1364988164386000901)! 
