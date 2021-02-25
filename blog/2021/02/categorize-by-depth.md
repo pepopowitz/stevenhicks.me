@@ -53,4 +53,4 @@ The rest of the day I'll handle my `@shallow` tasks during my extra-short time b
 
 ---
 
-Next time we'll answer the question that actually prompted me writing this series: "How can I get into flow state more quickly so that I can accomplish something meaningful in smaller blocks of time?"
+Next time we'll answer the question that actually prompted me writing this series: ["How can I get into flow state more quickly so that I can accomplish something meaningful in smaller blocks of time?"](../warm-up-for-deep-work)
