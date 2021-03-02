@@ -8,6 +8,7 @@ on:
   schedule:
     # 15 14 * * * - 14:15 UTC every day
     - cron: 15 14 * * MON-FRI
+  workflow_dispatch:
 
 jobs:
   merge_schedule:
