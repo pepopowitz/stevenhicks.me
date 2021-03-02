@@ -7,7 +7,7 @@ on:
       - synchronize
   schedule:
     # 15 14 * * * - 14:15 UTC every day
-    - cron: 46 * * MON-FRI
+    - cron: "*/5 * * * MON-FRI"
   workflow_dispatch:
 
 jobs:
