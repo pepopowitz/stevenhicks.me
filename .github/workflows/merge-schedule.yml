@@ -7,7 +7,7 @@ on:
       - synchronize
   schedule:
     # 15 14 * * * - 14:15 UTC every day
-    - cron: "*/5 * * * MON-FRI"
+    - cron: '*/5 * * * MON-FRI'
   workflow_dispatch:
 
 jobs:
@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: pepopowitz/merge-schedule-action@debugging
         with:
-          time_zone: "America/Chicago"
+          time_zone: 'America/Chicago'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
