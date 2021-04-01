@@ -71,8 +71,7 @@ h4 {
 }
 
 img {
-  filter: sepia(0.3) saturate(0.9);
-  border-radius: $border-radius;
+  filter: sepia(0.2) saturate(0.8);
   @include boxShadowed($brand-light);
 }
 img.square-corners {
