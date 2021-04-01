@@ -4,6 +4,7 @@ date: 2021-03-31T23:57:02.534
 tags: post
 layout: blog
 snippet: I'm in love with RedwoodJS. How do I think in terms of Redwood to build a feature? I've got a PR that demonstrates it. 
+tweet: I'm in love with RedwoodJS. How do I think in terms of Redwood to build a feature? I've got a PR that demonstrates it. 
 draft: false
 ---
 
