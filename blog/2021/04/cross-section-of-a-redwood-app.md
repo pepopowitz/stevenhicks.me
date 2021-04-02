@@ -1,6 +1,6 @@
 ---
 title: Cross-Section Of A Redwood App
-date: 2021-04-01T13:57:02.534
+date: 2021-04-02T13:57:02.534
 tags: post
 layout: blog
 snippet: I'm in love with RedwoodJS. I noticed that a recent PR on a personal project nicely captured a cross-section of a Redwood app — all the bits needed to pass data from the UI to the database and back.
