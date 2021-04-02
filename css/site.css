@@ -19,8 +19,7 @@ h4 {
   font-weight: bold; }
 
 img {
-  filter: sepia(0.3) saturate(0.9);
-  border-radius: 60px;
+  filter: sepia(0.2) saturate(0.8);
   -webkit-box-shadow: 0px 1px 5px #ff3314;
   -moz-box-shadow: 0px 1px 5px #ff3314;
   box-shadow: 0px 1px 5px #ff3314; }
