@@ -48,7 +48,7 @@ From my dad's plumber eye, here's what our end solution looks like:
 
 ## Step 1: Output a new RSS feed: tweets.xml
 
-This is a pretty straight-forward step for me, given I'm using [eleventy](https://www.11ty.dev/) to staticaly generate my blog, and I already have it generating a [feed.xml](https://github.com/pepopowitz/stevenhicks.me/blob/main/_feed/feed.xml.njk) so that you can subscribe to my new posts.
+This is a pretty straight-forward step for me, given I'm using [eleventy](https://www.11ty.dev/) to statically generate my blog, and I already have it generating a [feed.xml](https://github.com/pepopowitz/stevenhicks.me/blob/main/_feed/feed.xml.njk) so that you can subscribe to my new posts.
 
 I create [a new template for a feed named `tweet.xml`](https://github.com/pepopowitz/stevenhicks.me/blob/main/_feed/tweets.xml.njk), and I [iterate all tweetable articles on my blog](https://github.com/pepopowitz/stevenhicks.me/blob/main/_feed/tweets.xml.njk#L29). I define "tweetable articles" in my `eleventy.js` as [articles that contain a `tweet` property](https://github.com/pepopowitz/stevenhicks.me/blob/main/.eleventy.js#L28-L34). This means the only articles that will show up in this feed are the ones [I specify a `tweet` property for](https://github.com/pepopowitz/stevenhicks.me/blob/main/blog/2021/03/prs-for-personal-projects.md).
 
