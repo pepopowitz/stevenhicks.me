@@ -265,7 +265,6 @@ code {
 pre {
   @include boxShadowed($brand-light);
   margin: 3rem auto;
-  border-radius: $border-radius;
   overflow-x: auto;
   line-height: 1.5rem;
   code.hljs {
