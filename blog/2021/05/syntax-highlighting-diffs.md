@@ -77,4 +77,4 @@ Because highlight.js supports `diff` as a language, it knows what to do with tho
 
 I like to build [hands-on tutorials](https://github.com/artsy/relay-workshop/tree/main/src/exercises/02-Fragment-Container), and something I hadn't until now figured out is how to clearly represent removing or replacing lines. With the `diff` syntax language, I can totally do this — and I don't have to install or configure anything new to support it!
 
-[this-article]: https://stevenhicks.me/2021/05/syntax-highlighting-diffs/
+[this-article]: https://github.com/pepopowitz/stevenhicks.me/blob/main/blog/2021/05/syntax-highlighting-diffs.md
