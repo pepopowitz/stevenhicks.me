@@ -62,3 +62,6 @@ These demonstrate my ability to communicate, my ability to collaborate, and my s
 - [Software Engineering And Creative Practice](https://www.buzzsprout.com/1781859/8549216-6-software-engineering-and-creative-practice)
 - [Scaling Your Impact pt. 2, this time with Orta](https://www.buzzsprout.com/1781859/8549218-8-scaling-your-impact-pt-2-this-time-with-orta)
 - [Effective Tech Leadership...question mark?](https://www.buzzsprout.com/1781859/8549223-13-effective-tech-leadership-question-mark)
+
+## Videos
+- [Demoing a boring feature by telling a story](https://www.youtube.com/watch?v=tIxCeI1Vz4E)
