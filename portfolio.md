@@ -21,7 +21,7 @@ A personal project I'm working on. A training journal built with [RedwoodJS](htt
 
 These demonstrate my ability to communicate, my ability to collaborate, and my skills as a developer.
 
-- [Setting up a new project and sharing what I learned along the way](https://github.com/artsy/relay-workshop/pull/1).
+- [Starting from scratch, solving problems, and sharing what I learned along the way](https://github.com/artsy/relay-workshop/pull/1).
 - [Solving a tricky UI problem](https://github.com/artsy/reaction/pull/2698).
 - [My first significant iOS/React Native PR](https://github.com/artsy/eigen/pull/3316).
   - Demonstrates refactoring and React component composition.
