@@ -56,8 +56,9 @@ These demonstrate my ability to communicate, my ability to collaborate, and my s
 - [Improve Pull Requests By Including Valuable Context](https://artsy.github.io/blog/2020/08/11/improve-pull-requests-by-including-valuable-context/)
   
 ## Talking
-### [Artsy Engineering Radio](https://open.spotify.com/show/0gJYxpqN6P11dbjNw8VT2a?si=L4TWDrQETwuVO6JR1SOZTQ&nd=1) (available on all major podcast platforms)
+### [Artsy Engineering Radio](https://www.buzzsprout.com/1781859/)
 
-- [Software Engineering And Creative Practice](https://podcasts.google.com/feed/aHR0cHM6Ly9hcnRzeS5naXRodWIuaW8vcG9kY2FzdC54bWw/episode/aHR0cHM6Ly9hcnRzeS1lbmdpbmVlcmluZy1wb2RjYXN0LnMzLmFtYXpvbmF3cy5jb20vQXJ0c3lFbmdpbmVlcmluZ1JhZGlvLWVwNi1pbnRlcnNlY3Rpb25PZkVuZ2luZWVyaW5nQW5kTXVzaWMubXAz?sa=X&ved=0CAUQkfYCahcKEwiovvCG95rwAhUAAAAAHQAAAAAQCA&hl=en)
-- [Scaling Your Impact pt. 2, this time with Orta](https://podcasts.google.com/feed/aHR0cHM6Ly9hcnRzeS5naXRodWIuaW8vcG9kY2FzdC54bWw/episode/aHR0cHM6Ly9hcnRzeS1lbmdpbmVlcmluZy1wb2RjYXN0LnMzLmFtYXpvbmF3cy5jb20vZXAtOC1vcnRhLXNjYWxpbmctaW1wYWN0Lm1wMw?sa=X&ved=0CAUQkfYCahcKEwiovvCG95rwAhUAAAAAHQAAAAAQCA&hl=en)
-- [Effective Tech Leadership...question mark?](https://podcasts.google.com/feed/aHR0cHM6Ly9hcnRzeS5naXRodWIuaW8vcG9kY2FzdC54bWw/episode/aHR0cHM6Ly9hcnRzeS1lbmdpbmVlcmluZy1wb2RjYXN0LnMzLmFtYXpvbmF3cy5jb20vZWZmZWN0aXZlLXRlY2gtbGVhZGVyc2hpcC1xdWVzdGlvbi1tYXJrLXdpdGgtaW50cm8ubXAz?sa=X&ved=0CAUQkfYCahcKEwiovvCG95rwAhUAAAAAHQAAAAAQCA&hl=en)
+- [Humanizing The Workplace](https://www.buzzsprout.com/1781859/8600736-19-humanizing-the-workplace)
+- [Software Engineering And Creative Practice](https://www.buzzsprout.com/1781859/8549216-6-software-engineering-and-creative-practice)
+- [Scaling Your Impact pt. 2, this time with Orta](https://www.buzzsprout.com/1781859/8549218-8-scaling-your-impact-pt-2-this-time-with-orta)
+- [Effective Tech Leadership...question mark?](https://www.buzzsprout.com/1781859/8549223-13-effective-tech-leadership-question-mark)
