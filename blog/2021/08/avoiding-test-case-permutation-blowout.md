@@ -3,7 +3,7 @@ title: Avoiding Test-Case Permutation Blowout
 date: 2021-08-26T10:38:50.829
 tags: post
 layout: blog
-snippet: Sometimes you want to write tests for a business rule that's based on multiple variables. Covering every possible permutation of the variables quickly becomes unmaintainable. I've found myself using a different approach — one test for the positive case, and one test for each variable's negative case.
+snippet: Sometimes you want to write tests for a business rule that's based on multiple variables. Covering every possible permutation of the variables quickly becomes unsustainable. I've found myself using a different approach — one test for the positive case, and one test for each variable's negative case.
 ---
 
 Sometimes you want to write a test for a business rule that's based on multiple variables. In your goal to cover the rule thoroughly, you start writing tests for each permutation of all variables. Quickly it blows up into something unsustainable. With n variables for the business rule, you get 2<sup>n</sup> permutations/test cases. This is manageable with 2 variables (4 test cases), but at 3 variables (8 test cases) it becomes ridiculous, and anything beyond that feels immediately uncomfortable.
