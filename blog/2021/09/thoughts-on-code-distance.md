@@ -22,7 +22,7 @@ I wonder if there's a way to represent the "code distance" in a PR? A PR with a 
 
 And then based on a history of PRs, I wonder if you can see trends of code distance? Are there [radar charts][radar-chart] or some better visualization to show the distance of changes in a PR? If I see PRs with similar distances or visualizations, is that a clue to re-architect a bit and shorten that distance?
 
-🤷 If you've got answers or thoughts about this, let me know!
+🤷 If you've got answers or thoughts about this, [let me know](https://twitter.com/pepopowitz/status/1438879983691239425)!
 
 [let-context-article]: https://www.stevenhicks.me/blog/2021/09/what-javascript-tests-could-learn-from-rspec/
 [radar-chart]: https://en.wikipedia.org/wiki/Radar_chart
