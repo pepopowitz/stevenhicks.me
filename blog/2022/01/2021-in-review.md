@@ -45,7 +45,7 @@ I still eat fast food a couple times a week, though. I love it too much. Food is
 
 ### Artsy Engineering Radio
 
-Early in 2021, [we announced that we'd be making an Artsy engineering podcast](https://twitter.com/ArtsyOpenSource/status/1347281477453684736). I was personally feeling extremely inspired by my friend [Ash][ash-furrow] leaving Artsy, and wanting to feel all the gaps he left and then some. Throughout the year, we've gotten more people involved in making episodes, with the goal of [Artsy Engineering Radio][artsy-engineering-radio] being a way for people at Artsy to contribute to the developer community with little effort. We've definitely done that — check out our episodes, there is so much good stuff in there, and so many wonderful voices.
+Early in 2021, [we announced that we'd be making an Artsy engineering podcast](https://twitter.com/ArtsyOpenSource/status/1347281477453684736). I was personally feeling extremely inspired by my friend [Ash][ash-furrow] leaving Artsy, and wanting to fill all the gaps he left and then some. Throughout the year, we've gotten more people involved in making episodes, with the goal of [Artsy Engineering Radio][artsy-engineering-radio] being a way for people at Artsy to contribute to the developer community with little effort. We've definitely done that — check out our episodes, there is so much good stuff in there, and so many wonderful voices.
 
 My personal favorite episodes to make:
 
