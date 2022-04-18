@@ -98,9 +98,17 @@ As mentioned above, the first couple things I did were:
 
 ### 1. I cloned my dotfiles repo into `~./.dotfiles`
 
+```sh
+~> git clone git@github.com:pepopowitz/dotfiles.git ./.dotfiles
+```
+
 ### 2. I installed [rcm]
 
-But before I could figure out what this process actually looked like, I needed to mess around. So I experimented with some files.
+```sh
+~> brew install rcm
+```
+
+Before I could get comfortable with the process of setting up my environment based on existing dotfiles, I needed to mess around. So I experimented with some files.
 
 ### 3. I started with a file I knew I'd be overwriting: `Brewfile`.
 
