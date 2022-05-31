@@ -1,5 +1,5 @@
 ---
-title: Select the email for git commits based on the current directory
+title: Select The Email For Git Commits Based On The Current Directory
 date: 2022-05-27T15:47:27.650
 tags: post
 layout: blog
