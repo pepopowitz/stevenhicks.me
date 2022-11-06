@@ -15,3 +15,5 @@ Here's where you can find me on the internet -- in rough order of most active to
 - [Instagram](https://www.instagram.com/pepopowitz/): Mostly non-tech posts.
 - [LinkedIn](https://linkedin.com/in/stevenjhicks/): All tech/job posts, but I'm not super active.
 - [Dev.to](https://dev.to/pepopowitz): Syndicated blog posts from here, but not all of them.
+
+And of course you can always try to reach me at [steven.j.hicks@gmail.com](mailto:steven.j.hicks@gmail.com), and I'll do my best, though I am often the kind of person to ignore emails until it becomes too uncomfortable to respond.
