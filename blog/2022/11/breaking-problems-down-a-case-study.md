@@ -1,6 +1,6 @@
 ---
 title: 'Breaking Problems Down: A Case Study'
-date: 2022-11-28T16:42:18.795
+date: 2022-11-30T16:42:18.795
 tags: post
 layout: blog
 snippet: "I've written in the past about breaking problems down in the abstract. For the last couple months I've worked on a project where I can demonstrate it in real life!"
@@ -14,7 +14,7 @@ So consider this article almost an addendum to [my previous work][original]. Ins
 
 ## Background: the project
 
-[Camunda Platform 8][product-camunda] includes a handful of components that work together to facilitate process orchestration. Most of them are always on the same version — but some of them aren't! Our [Optimize][product-optimize] component, which as you might guess empowers you to optimize a modeled process, is on a completely different version number than the rest of the components.
+[Camunda Platform 8][product-camunda] includes a handful of components that work together to facilitate process orchestration. Most of them are always on the same version — but some of them aren't! Our [Optimize][product-optimize] component, which you might guess empowers you to optimize a modeled process, is on a completely different version number than the rest of the components. Where most components are currently on version 8.1, the latest Optimize release is 3.9.0.
 
 Unfortunately, our docs weren't reflecting this. We treated the latest version of _all_ components as version 8, even if that wasn't correct. And that was this project! Get [the Optimize docs][docs-optimize] showing the correct version number.
 
@@ -22,7 +22,7 @@ As with anything, when you boil it down to a paragraph it sounds like way less w
 
 ## The work before the work
 
-As I mentioned in my previous article, small PRs start long before the PRs are opened. In this case, some up-front investigation helped identify ways to break the work down.
+[Small PRs start long before the PRs are opened][original-start-small]. In this case, some up-front investigation helped identify ways to break the work down.
 
 ### Early exploration to identify and understand the work
 
@@ -31,7 +31,16 @@ I had two goals with the early exploration:
 1. To understand what work was needed, so that I could break it down.
 2. To resolve some uncertainty about how the tooling supported solving our problem.
 
-So I built some proofs of concept. Initially to configure the versioning scheme correctly, then to ????, and along the way to make it possible to release incomplete changes. TODO fill this in
+So I built some proofs of concept:
+
+1. [To explore the Docusaurus feature of "multi-instance versioning"](https://github.com/camunda/camunda-platform-docs/pull/904).
+2. [To rougly apply "multi-instance versioning" to our Optimize documentation](https://github.com/camunda/camunda-platform-docs/pull/906).
+3. [To make it possible to release incomplete changes](https://github.com/camunda/camunda-platform-docs/pull/910).
+
+Along the way, I built a couple more proofs of concept when I ran into problems I wasn't sure how to solve:
+
+4. [Reducing duplication across documentation instances](https://github.com/camunda/camunda-platform-docs/pull/921).
+5. [Navigation issues across documentation instances](https://github.com/camunda/camunda-platform-docs/pull/1345).
 
 This investigation and prototyping resulted in a much better understanding of the work. It even helped us identify work that, if done up front, would improve our ability to schedule and complete the remaining work in three important ways:
 
@@ -51,23 +60,21 @@ This is not the first time I've referenced the following Kent Beck tweet, nor wi
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">for each desired change, make the change easy (warning: this may be hard), then make the easy change</p>&mdash; Kent Beck 🌻 (@KentBeck) <a href="https://twitter.com/KentBeck/status/250733358307500032?ref_src=twsrc%5Etfw">September 25, 2012</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-(TODO: backup in case twitter dies: ) ![kent beck: for each desired change, make the change easy (warning: this may be hard), then make the easy change](../kent-beck-quote.png)
-
 Building a seam before introducing changes is always easier than doing those two things simultaneously.
 
 ## Tracking the work
 
 After the initial exploration and proposal, this project sat untouched for a month or two — for no important reason, there are just other things that I worked on. But the exploration gave us enough information to start tracking the work with some level of confidence.
 
-There are a handful of different tools and artifacts we use to track projects at Camunda — Trello, Jira, GitHub, Google Docs... For the Developer Experience team in particular, we've moved to using GitHub to track almost everything. So for this project, I created [a single issue to list all the things we'd have to do to complete this project][epic-issue]. I initially filled out from a high level, not too much detail, figuring I'd fill in more details as I learned them.
+There are a handful of different tools and artifacts we use to track projects at Camunda — Trello, Jira, GitHub, Google Docs... For the Developer Experience team in particular, we've moved to using GitHub to track almost everything. So for this project, I created [a single issue to list all the things we'd have to do to complete this project][epic-issue]. I initially filled it out from a high level, not too much detail, figuring I'd fill in more details as I learned them.
 
 I have mixed feelings about this approach. I like that there is one place that tracks all of the work. I believe strongly in the importance of tracking the work publicly (or at least, visible to my team). This accomplishes that.
 
-But by the end of the project the issue became pretty massive. If you're looking for something specific in that list of completed work, it's pretty hard to find. Part of me thinks this might have been better served as a GitHub project, instead of an issue. I chose the artifact based on what I knew at the time, so I'm not holding it against myself for tracking it this way. I do think I'll be more conscious next time of how big an epic _might grow_ when I decide how to track it.
+But by the end of the project the issue became pretty massive. If you're looking for something specific in that list of completed work, it's hard to find. Part of me thinks this might have been better served as a GitHub project, instead of an issue. I chose the artifact based on what I knew at the time, so I'm not holding it against myself for tracking it this way. I do think I'll be more conscious next time of how big an epic _might grow_ when I decide how to track it.
 
 ## Explaining the work
 
-Knowing that I was working on this project mostly in isolation, it was critical to explain my work to reviewers who had less context. I learned some good habits about [adding context to PRs][artsy-adding-context-to-prs] while at Artsy. On this project I got to put them to good use — especially [adding videos to demonstrate changes][pr-video], and [inline comments identifying the interesting changes][pr-comments].
+Knowing that I was working on this project mostly in isolation, it was critical to explain my work to reviewers who had less context. I learned some good habits about [adding context to PRs][artsy-adding-context-to-prs] while at Artsy. On this project I got to put them to good use — especially [adding videos to demonstrate changes][pr-video] ([direct link to video][video]), and [inline comments identifying the interesting changes][pr-comments].
 
 A couple other good reasons to explain work at this level:
 
@@ -80,13 +87,13 @@ Pull requests that combine significant infrastructural changes with routine chan
 
 One example of this was mentioned above — [introducing a "next" version of the docs][pr-next-version], which was shipped separately from any content changes. After it was merged, I was free to twiddle with content all I wanted, but I wouldn't have wanted someone to have to review both types of changes in one place.
 
-In fact, as soon as I started creating the "next" version of the docs, I discovered another _separate_ infrastructural change that I wanted to make. I noticed while playing around with my "next" version changes that the multiple sets of versions were going to create a mess of hard-coded versions in URLs when linking across the documentation. Rather than cram the two infrastructural changes together, I shipped [the linking PR][pr-cross-linking] first, and [the "next" version PR][pr-next-version] second.
+Another example — [while I was moving Optimize documentation into its own section for the first time][pr-first-version], I noticed that the multiple sets of versions were going to create a cross-linking mess. We'd end up with hard-coded versions in URLs when linking across the documentation, and have to update them whenever new versions were released. Before completing [the first Optimize docs PR][pr-first-version], I introduced [an infrastructural enhancement for cross-linking][pr-cross-linking].
 
 Sequence in this case probably didn't matter too much; the importance to me was that I had two related but distinct changes, and I wanted to keep the history of them separate. Aside from making it easier to review, this approach prevents [one ready feature from being held up by one disputed feature][original-what-is-small].
 
 ## Splitting stories
 
-Even though there was a ton of content to move in this project, there presented two pretty natural ways to split the content into smaller pieces: by version, and by content section.
+Even though there was a ton of content to move in this project, there presented two natural ways to split the content into smaller pieces: by version, and by content section.
 
 Splitting by version was something we noticed up front. We could iterate through the different versions, starting with the most recent version and ending with the oldest, and migrate content one version at a time. This also presented itself midway through the project as an opportunity to defer work. As we worked through newer versions, we realized that the oldest versions were less important to us, and we de-prioritized them.
 
@@ -103,6 +110,7 @@ I've gotten better at de-scoping and deferring these kinds of things, and this p
 Do you have any real life examples of breaking problems down into smaller pieces? [Let me know!](/where)
 
 [original]: https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/
+[original-start-small]: https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/#small-prs-start-long-before-the-work-starts
 [original-iterate]: https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/#integrating-code-a-little-at-a-time
 [original-infrastructure]: https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/#separate-infrastructural-work-from-implementations
 [original-slice]: https://artsy.github.io/blog/2021/03/09/strategies-for-small-focused-pull-requests/#start-with-small-scope--slice-your-stories-small
@@ -116,3 +124,8 @@ Do you have any real life examples of breaking problems down into smaller pieces
 [pr-next-version]: https://github.com/camunda/camunda-platform-docs/pull/1118
 [pr-optimize-infra]: https://github.com/camunda/camunda-platform-docs/pull/1166
 [artsy-adding-context-to-prs]: https://artsy.github.io/blog/2020/08/11/improve-pull-requests-by-including-valuable-context/
+[pr-video]: https://github.com/camunda/camunda-platform-docs/pull/1170
+[video]: https://www.loom.com/share/511730f7dbec41e9ad6fb1d748da0041
+[pr-comments]: https://github.com/camunda/camunda-platform-docs/pull/1328
+[pr-cross-linking]: https://github.com/camunda/camunda-platform-docs/pull/1170
+[pr-first-version]: https://github.com/camunda/camunda-platform-docs/pull/1166
