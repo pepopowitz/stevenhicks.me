@@ -398,9 +398,10 @@ article {
   margin-top: 3rem;
 }
 
-.twitter-tweet {
-  margin-left: auto;
-  margin-right: auto;
+.twitter-tweet, .mastodon-embed, .instagram-media {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
 }
 
 .content-article {
