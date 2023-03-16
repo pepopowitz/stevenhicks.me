@@ -56,7 +56,7 @@ I don't care as much about how shiny and hot the tools are that I'm using. I car
 
 There's certainly a risk of over-optimizing for DX at the expense of UX, in anything we build. Developers can easily overlook that imbalance because they aren't the actual product user. But even when prioritizing the user's experience, the developer's experience matters. If creating a good UX requires a lot of effort from developers, they just aren't going to do it.
 
-The answer, as always, lies somewhere in the middle.
+The answer to the question "DX or UX?", as always, lies somewhere in the middle.
 
 [better-dx-article]: https://begin.com/blog/posts/2023-02-28-redefining-developer-experience
 [better-author]: https://mastodon.online/@colepeters
