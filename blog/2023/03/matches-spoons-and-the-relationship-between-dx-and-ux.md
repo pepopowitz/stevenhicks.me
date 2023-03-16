@@ -1,5 +1,5 @@
 ---
-title: Burning Matches And The Relationship Between Developer Experience and User Experience
+title: Matches, Spoons, And The Relationship Between DX and UX
 date: 2023-03-16T12:00:51.528
 tags: post
 layout: blog
