@@ -3,7 +3,7 @@ title: Matches, Spoons, And The Relationship Between DX and UX
 date: 2023-03-16T12:00:51.528
 tags: post
 layout: blog
-snippet:
+snippet: Developer Experience is kind of having a moment right now — and not necessarily a good one. Have we prioritized DX at the expense of UX? In some cases, definitely. But the two are very connected, and we can't fully choose one over the other.
 ---
 
 Developer Experience (DX) is kind of having a moment right now — and not necessarily a good one. In recent months there's been a lot of discourse pushing back on the importance of DX — or at least its importance relative to the importance of User Experience (UX). My favorite article to capture the moment is [Redefining Developer Experience][better-dx-article], by [Cole Peters][better-author]. Start there, if you aren't sure what I'm referring to.
