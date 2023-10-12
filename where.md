@@ -9,6 +9,7 @@ metaDescription: Where can you find Steven Hicks online?
 
 Here's where you can find me on the internet -- in rough order of most active to least active.
 
+- [GitHub](https://github.com/pepopowitz): I am in GitHub many many times every day.
 - [Threads](https://www.threads.net/@pepopowitz): This is my main! Posts about tech, triathlon stuff, art stuff, etc. I like it better than Mastodon. But it's not very active yet. I check this a couple times daily.
 - [Mastodon](https://hachyderm.io/@pepopowitz): This used to be my main. Posts about tech, triathlon stuff, art stuff, etc. I check this once daily.
 - [YouTube](www.youtube.com/@2RadDads): 2RadDads, a programming stream I do with my friend Jon! It's pretty active, except when Jon and I are on summer vacations.
