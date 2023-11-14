@@ -7,7 +7,7 @@ snippet: For months I worked on reviving the search results for Camunda's versio
 draft: false
 ---
 
-# 1. The introduction
+## 1. The introduction
 
 Software documentation is a critical element of developer experience. I don't believe this is a bold or disagreeable statement.
 
@@ -21,13 +21,13 @@ Imagine the docs you most interact with. You know them reasonably well, but you'
 
 Zero results??!! What??? You _know_ it's in there somewhere. (╯°□°)╯︵ ┻━┻
 
-## The real-life story of de-indexing our docs
+### The real-life story of de-indexing our docs
 
 For months I worked on reviving the search results for [Camunda's version 7 documentation][c7-docs]. Our docs weren't giving 0 results for most queries, but they weren't far off. Known pertinent results were excluded consistently. Most of the results that came up were slightly related but not helpful.
 
 Throughout this I learned unexpected details about SEO (Search Engine Optimization) — especially Google's flavor of SEO. In the end we were able to revive the massively deindexed content. I had my doubts that we'd get there.
 
-## What to expect from this article
+### What to expect from this article
 
 This article describes my journey through this problem of vanishing search results in the Camunda 7 (C7) docs. There are 5 parts:
 
@@ -41,9 +41,9 @@ That final fifth part is the payoff. If you're managing a documentation site, an
 
 If you prefer a video format, I've posted [a summary of this experience on YouTube](https://www.youtube.com/watch?v=HJGxdj_8oJ8). It's told in a different way, but the message is the same.
 
-# 2. The disappearance
+## 2. The disappearance
 
-## Setting context
+### Setting context
 
 Camunda version 8 (C8) marked a significant change from version 7 (C7). While version 7 was intended for self-managed environments, version 8 is cloud-first. Both versions are still supported, [at least until 2027](https://docs.camunda.org/enterprise/announcement/#camunda-extended-support-offering).
 
@@ -53,7 +53,7 @@ My team, Developer Experience, manages the C8 docs; we _interact_ with the C7 do
 
 This story is about the C7 docs. The ones that we try not to touch very much....unless something goes very very wrong with them.
 
-### Camunda 7 documentation details
+#### Camunda 7 documentation details
 
 The Camunda 7 product is currently on version 7.20. Each released version has its own documentation: [7.20][7-20], [7.19][7-19], [7.18][7-18], all the way down to [7.0][7-0]. There are also two non-numeric versions of the documentation: [latest][latest] (a mirror of whichever numeric version is latest), and [develop][develop] (in-progress documentation for the next release). That's `n+2` versions of the documentation, where `n` is the number of released numeric versions. The early versions were released over 8 years ago! There are a lot of docs.
 
@@ -61,7 +61,7 @@ Much of the documentation is duplicated across versions. For example, look how s
 
 One other important detail — there is an in-site search for the C7 docs. Notably, it is built on a [programmable Google search engine](https://programmablesearchengine.google.com/about/). Basically, that means that the search functionality on the site is powered by Google. A search query entered into the C7 docs search box gives basically the same results as entering the query on google.com and filtering by `site:docs.camunda.org`. Again, "foreshadowing...."
 
-## First report
+### First report
 
 At some point in 2021, the search experience on docs.camunda.org began to degrade. It was not sudden, or obvious. But search results became less helpful, and obvious hits on specific search queries began to disappear. A search for BPMN — a critical and core technology in the Camunda ecosystem, and definitely documented — returned zero helpful results. Since the in-site search is built on Google, the results were degraded both within the site, and directly from google.com.
 
@@ -71,9 +71,9 @@ In mid-2022, we heard from Camunda's support team. They emphasized the problem. 
 
 Upon this discovery, I wrapped up other on-going projects, and we shifted our focus to fixing the C7 search experience.
 
-# 3. The investigation
+## 3. The investigation
 
-## Finding answers in Google Search Console
+### Finding answers in Google Search Console
 
 Early in our investigation, we noticed something strange in the Google Search Console. Many of the docs for the current version were not indexed. They were filed under the category of ["Duplicate without user-selected canonical"][dupe-without-canonical] — meaning Google chose a different version of the page as canonical, and we didn't specify one with a `<link rel="canonical">` hint.
 
@@ -85,13 +85,13 @@ Inspecting the older version pages in Google Search Console clearly revealed the
 
 Sure enough — our docs [had a check in them for the version being rendered][source-noindex-check], and if it wasn't the current version, a `<meta name="robots" content="noindex">` directive was applied to the page. We did this with the intention of convincing Google to index only the current version. Unfortunately, it did not have that effect.
 
-### Why we had zero search results
+#### Why we had zero search results
 
 It was the combination of these two factors that caused Google to index very little of our content. We were telling Google explicitly not to index our older version pages with `noindex` directives; Google was choosing those older version pages as the canonical source, and therefore not indexing the latest version pages. 😅😬
 
 This set me on a learning adventure. To me, it's obvious that in a documentation site, the latest version page is probably the one I want to find in a search. Why doesn't Google think that? And really, how does Google (and any other search engine) handle duplicate content?
 
-## How search engines handle duplicate content
+### How search engines handle duplicate content
 
 Duplicate content happens all the time on the internet. Sometimes it's malicious (cue a generative AI ethics discussion), usually it's not. The usual example is a product page that can live in multiple categories, e.g. `/tops/cowboy-shirt` and `/western-wear/cowboy-shirt`.
 
@@ -101,13 +101,13 @@ I say "hint" because that's all `link rel=canonical` is. Google might, and in my
 
 Our docs weren't doing much to help Google interpret the collective story. We thought we were giving directives about canonicals by applying `noindex` to the old versions, but the `noindex` was applied separately from the choice of canonicals. We weren't submitting sitemaps with the true canonicals — in fact, we didn't even have sitemaps that were properly formed. It was basically 100% up to Google to figure out which version was canonical, without any of our input.
 
-# 4. The resolution
+## 4. The resolution
 
 We tried a lot of different things to convince Google to index the most recent version of our documentation. Not many of our attempts seemed to work!
 
 And the feedback loop for each of them was horribly long! I'd experiment with something, and then wait weeks to see what happened. Even then, it was hard to tell if something worked. It was more obvious if it definitely _didn't_ work.
 
-## Submitting a correct sitemap...unsuccessfully
+### Submitting a correct sitemap...unsuccessfully
 
 When we realized Google wasn't working off of a sitemap, we went to submit ours, figuring it would be useful as a signal to Google about canonicals. It was rejected 😜 for being in an improper format. I wondered how long it had been in that state...
 
@@ -115,7 +115,7 @@ We corrected the sitemap's format. Our docs have a redirect rule set up so that 
 
 We tried a sitemap with the latest version hardcoded in the URLs. This had a more positive effect than the redirecting versionless URLs, but still not very significant.
 
-## Declaring canonicals...unsuccessfully
+### Declaring canonicals...unsuccessfully
 
 We shifted our focus to declaring canonicals via [`link rel=canonical`][link-rel-canonical]. Since we have so many versions of documentation, we ran these experiments on only a few pages at a time, or sometimes an entire version at a time.
 
@@ -129,7 +129,7 @@ We also experimented with the sequencing of our submissions to Google's crawler.
 
 Sadly, no. Occasionally something good would happen, but results were not repeatable or predictable. It seemed like there was nothing we could do to convince Google to consistently choose our latest version docs as canonical. Each experiment took weeks to play out, and it was frustrating.
 
-## Building a comprehensive story...and waiting
+### Building a comprehensive story...and waiting
 
 We noticed that Google was doing a lot more crawling of our docs when we released a new version, and a flood of new pages came online. Given what we'd learned about how search engines choose a canonical source — by piecing together clues from a website _and_ the rest of the internet — we decided to take one final half-court shot.
 
@@ -139,7 +139,7 @@ We weren't sure what to do about the `noindex` situation. My opinion was that th
 
 Months later, when we released our next version [(7.19)][7-19], we submitted a sitemap containing only the 7.19 pages, and crossed our fingers. And waited again.
 
-## Success!
+### Success!
 
 Over the next few months, we received a couple notes from our support team that suggested things had improved.
 
@@ -149,7 +149,7 @@ Eventually I logged into Google Search Console to see if things had improved. It
 
 [90% of our 7.19 pages were indexed][results-initial-success]! I checked back later, and [all but 4 of 500 pages were indexed][results-later-success]. Google finally agrees with us! Current version pages are canonical. And more importantly, you get accurate results again when searching our docs.
 
-# 5. The recommendation
+## 5. The recommendation
 
 Whew, the payoff! So you've got a documentation site, with duplicate content across versions. You don't want to re-live our awful experience of de-indexing your docs. What should you do?
 
@@ -164,7 +164,7 @@ More specifically, in our experience that means:
 
 There's not much there, but any slight deviation can cause havoc.
 
-#### Some other important notes
+### Some other important notes
 
 - `link rel=canonical` is only a suggestion!
 
