@@ -7,7 +7,7 @@ snippet: For months I worked on reviving the search results for Camunda's versio
 draft: false
 ---
 
-## 1. The introduction
+<h2 id="the-introduction">1. The introduction</h2>
 
 Software documentation is a critical element of developer experience. I don't believe this is a bold or disagreeable statement.
 
@@ -31,17 +31,17 @@ Throughout this I learned unexpected details about SEO (Search Engine Optimizati
 
 This article describes my journey through this problem of vanishing search results in the Camunda 7 (C7) docs. There are 5 parts:
 
-1. The introduction. You're almost finished reading that.
-2. The disappearance.
-3. The investigation.
-4. The resolution.
-5. The recommendation.
+1. [The introduction](#the-introduction). You're almost finished reading that.
+2. [The disappearance](#the-disappearance).
+3. [The investigation](#the-investigation).
+4. [The resolution](#the-resolution).
+5. [The recommendation](#the-recommendation).
 
 That final fifth part is the payoff. If you're managing a documentation site, and unsure how to handle versioned documentation from an SEO perspective, and just looking for guidance, jump there. Most guidance for handling duplicate content in regards to SEO ignores one prime use case — versioned documentation. I hope this article fills that gap.
 
 If you prefer a video format, I've posted [a summary of this experience on YouTube](https://www.youtube.com/watch?v=HJGxdj_8oJ8). It's told in a different way, but the message is the same.
 
-## 2. The disappearance
+<h2 id="the-disappearance">2. The disappearance</h2>
 
 ### Setting context
 
@@ -71,7 +71,7 @@ In mid-2022, we heard from Camunda's support team. They emphasized the problem. 
 
 Upon this discovery, I wrapped up other on-going projects, and we shifted our focus to fixing the C7 search experience.
 
-## 3. The investigation
+<h2 id="the-investigation">3. The investigation</h2>
 
 ### Finding answers in Google Search Console
 
@@ -101,7 +101,7 @@ I say "hint" because that's all `link rel=canonical` is. Google might, and in my
 
 Our docs weren't doing much to help Google interpret the collective story. We thought we were giving directives about canonicals by applying `noindex` to the old versions, but the `noindex` was applied separately from the choice of canonicals. We weren't submitting sitemaps with the true canonicals — in fact, we didn't even have sitemaps that were properly formed. It was basically 100% up to Google to figure out which version was canonical, without any of our input.
 
-## 4. The resolution
+<h2 id="the-resolution">4. The resolution</h2>
 
 We tried a lot of different things to convince Google to index the most recent version of our documentation. Not many of our attempts seemed to work!
 
@@ -149,7 +149,7 @@ Eventually I logged into Google Search Console to see if things had improved. It
 
 [90% of our 7.19 pages were indexed][results-initial-success]! I checked back later, and [all but 4 of 500 pages were indexed][results-later-success]. Google finally agrees with us! Current version pages are canonical. And more importantly, you get accurate results again when searching our docs.
 
-## 5. The recommendation
+<h2 id="the-recommendation">5. The recommendation</h2>
 
 Whew, the payoff! So you've got a documentation site, with duplicate content across versions. You don't want to re-live our awful experience of de-indexing your docs. What should you do?
 
