@@ -17,7 +17,7 @@ An up-to-date collection of my dev highlights.
 
 There's no better preview of what it's like to work with someone than their pull requests. These PRs demonstrate my approach to communication and collaboration, and my skills as a developer.
 
-- [Describing a problem and solution in depth, including visuals, and taking constructive feedback to make the work better](- https://github.com/camunda/camunda-platform-docs/pull/2577).
+- [Describing a problem and solution in depth, including visuals, and taking constructive feedback to make the work better](https://github.com/camunda/camunda-platform-docs/pull/2577).
 - [Starting from scratch, solving problems, and sharing what I learned along the way](https://github.com/artsy/relay-workshop/pull/1).
 - [Solving a tricky UI problem](https://github.com/artsy/reaction/pull/2698).
 - [My first significant iOS/React Native PR](https://github.com/artsy/eigen/pull/3316).
