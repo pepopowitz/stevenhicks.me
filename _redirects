@@ -1,11 +1,11 @@
 /test-driven-javascript /workshops/test-driven-javascript
 /test-driven-javascript-slides https://www.stevenhicks.me/workshops/test-driven-javascript/
-/test-driven-javascript-exercises https://github.com/pepopowitz/tdd-workshop 
+/test-driven-javascript-exercises https://github.com/pepopowitz/tdd-workshop
 /test-driven-javascript-setup https://github.com/pepopowitz/tdd-workshop/tree/master/module-0
 
 /tdd /workshops/test-driven-javascript
 /tdd-slides https://www.stevenhicks.me/workshops/test-driven-javascript/
-/tdd-exercises https://github.com/pepopowitz/tdd-workshop 
+/tdd-exercises https://github.com/pepopowitz/tdd-workshop
 /tdd-setup https://github.com/pepopowitz/tdd-workshop/tree/master/module-0
 
 /react-testing /talks/react-testing
@@ -35,3 +35,5 @@
 /blog/2020/11/better-content-creation-through-sandwiches-and-froyo /blog/2020/11/sandwiches-froyo-and-delivering-a-cohesive-message
 
 /atom.xml /feed.xml
+
+/camunda-canonicals /blog/2024/04/how-camunda-docs-handle-canonicals
